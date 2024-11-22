@@ -1,0 +1,23 @@
+//Write a Java program to find the number of days in a month.
+
+import java.util.Scanner;
+import java.time.YearMonth;
+
+public class asg07 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the month number: ");
+        int month = scanner.nextInt();
+        
+        System.out.print("Enter the year: ");
+        int year = scanner.nextInt();
+        
+        YearMonth yearMonth = YearMonth.of(year, month);
+        int daysInMonth = yearMonth.lengthOfMonth();
+        
+        System.out.println("Number of days in month " + month + " of year " + year + " is: " + daysInMonth);
+        
+        scanner.close();
+    }
+}
