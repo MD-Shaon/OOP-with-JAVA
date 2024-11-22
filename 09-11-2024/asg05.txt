@@ -1,0 +1,33 @@
+//5.	Write a Java program that takes a number from the user and generates an integer between 1 and 7. It displays the weekday name.
+import java.util.Scanner;
+
+public class asg05 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number (1-7): ");
+        int day = scanner.nextInt();
+
+        String weekday;
+        if (day == 1) {
+            weekday = "Monday";
+        } else if (day == 2) {
+            weekday = "Tuesday";
+        } else if (day == 3) {
+            weekday = "Wednesday";
+        } else if (day == 4) {
+            weekday = "Thursday";
+        } else if (day == 5) {
+            weekday = "Friday";
+        } else if (day == 6) {
+            weekday = "Saturday";
+        } else if (day == 7) {
+            weekday = "Sunday";
+        } else {
+            weekday = "Invalid input! Please enter a number between 1 and 7.";
+        }
+
+        System.out.println(weekday);
+
+        scanner.close();
+    }
+}
