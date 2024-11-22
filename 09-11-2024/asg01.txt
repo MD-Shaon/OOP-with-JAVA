@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class asg01 {
+    public static void main(String[] args) {
+     
+        System.out.print("Enter a number: ");
+        double number = new Scanner(System.in).nextDouble();
+        System.out.println(number>0?"Positive":number<0? "Negative":"Zero");
+    }
+}
